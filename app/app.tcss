@@ -1,0 +1,18 @@
+#header {
+    border: solid $secondary;
+    border-title-align: left;
+    color: $primary;
+    text-style: bold;
+    align: left top;
+}
+
+#subtitle {
+    color: $primary;
+    align: right top;
+}
+
+#clock {
+    color: $primary;
+    align: right top;
+}
+
