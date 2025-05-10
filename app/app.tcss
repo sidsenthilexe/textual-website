@@ -1,18 +1,36 @@
-#header {
+#title {
     border: solid $secondary;
     border-title-align: left;
     color: $primary;
     text-style: bold;
     align: left top;
+    margin-left: 2;
+    margin-top: 1;
+    margin-right: 2;
+    height: auto;
+    width: 100%;
 }
 
 #subtitle {
-    color: $primary;
-    align: right top;
+    color: $text-primary;
+    align: left top;
+    height: auto;
+    width: 100%;
+    margin-left: 2;
+    margin-right: 2;
 }
+
+#allTabs {
+    align: left top;
+    height: auto;
+    width: 100%;
+    margin-left: 2;
+    margin-right: 2;
+}
+
 
 #clock {
     color: $primary;
-    align: right top;
+    align: left top;
 }
 
