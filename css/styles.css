@@ -4,23 +4,24 @@
   --global-font-size: 15px;
   --global-line-height: 1.4em;
   --global-space: 10px;
-  --font-stack: "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", serif;
-  --mono-font-stack: "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", serif;
+  --padding-left: 25px;
+  --font-stack: "Menlo", "Monaco", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", serif;
+  --mono-font-stack: "Menlo", "Monaco", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", serif;
   --background-color: #121212;
   --page-width: 60em;
   --font-color: #e0e0e0;
   --invert-font-color: #000000;
-  --primary-color: #00ffae;
+  --primary-color: #00cc00;
   --secondary-color: #888888;
   --error-color: #ff3860;
   --progress-bar-background: #444444;
-  --progress-bar-fill: #00ffae;
+  --progress-bar-fill: #00cc00;
   --code-bg-color: #2e2e2e;
   --input-style: solid;
   --display-h1-decoration: none;
   --block-background-color: #1e1e1e;
   /* var(--background-color); */
-}
+} 
 
 * {
   box-sizing: border-box;
@@ -32,7 +33,15 @@
   color: var(--invert-font-color);
 }
 
-body {
+main {
+  flex: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-size: var(--global-font-size);
   color: var(--font-color);
   line-height: var(--global-line-height);
@@ -40,6 +49,7 @@ body {
   font-family: var(--font-stack);
   word-wrap: break-word;
   background-color: var(--background-color);
+  padding-left: var(--padding-left);
 }
 
 h1,
@@ -70,6 +80,23 @@ em {
   color: var(--font-color);
 }
 
+sup {
+  font-size: 15px;
+  font-style: normal;
+  font-family: var(--font-stack);
+  color: var(--font-color);
+}
+
+footer {
+  text-align: left;
+  margin-top: auto;
+  font-size: 10px;
+  font-style: normal;
+  font-family: var(--font-stack);
+  color: var(--font-color);
+  text-align: right end;
+}
+
 blockquote,
 code,
 em,
@@ -79,7 +106,6 @@ strong {
 
 blockquote,
 code,
-footer,
 h1,
 h2,
 h3,

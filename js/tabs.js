@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
+            const target = button.getAttribute('data-tab');
 
             tabButtons.forEach(btn => btn.classList.remove('active'));
             tabContents.forEach(content => content.classList.remove('active'));
