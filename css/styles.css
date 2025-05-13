@@ -81,7 +81,7 @@ em {
 }
 
 sup {
-  font-size: 15px;
+  font-size: 13px;
   font-style: normal;
   font-family: var(--font-stack);
   color: var(--font-color);
@@ -164,7 +164,7 @@ h4,
 h5,
 h6 {
   position: relative;
-  margin-bottom: var(--global-line-height);
+  margin-bottom: 5px;
   font-weight: 600;
 }
 
